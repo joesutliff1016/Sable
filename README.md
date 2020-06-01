@@ -1,7 +1,7 @@
 # Sable
 
 An e-commerce website with administrator back-end that allows the site owner to login to an admistrator page where they can
-add, delete, and edit products or customers.
+add, delete, edit products or customers.
 
 ## Technologies Used
 
