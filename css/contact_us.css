@@ -1,0 +1,157 @@
+
+
+#three-row1 .fas {
+  font-size: 3.5rem;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#three-row1 .fas:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#container {
+  width: 95%;
+  margin: 0 auto;
+}
+#left img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  margin: 25px 0;
+  color: #000;
+  font-weight: lighter;
+}
+#bolder {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: 2.5px;
+  line-height: 1.5rem;
+}
+#lighter {
+  font-family: 'Nunito', sans-serif;
+}
+#icons {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.fab {
+  margin: 5px;
+  font-size: 1.3rem;
+}
+#contact-form {
+  font-family: 'Nunito', sans-serif;
+  display: grid;
+  grid-template-columns:repeat(6, 2fr);
+  grid-template-rows:repeat(8, minmax(43px, auto));
+  grid-gap: 10px;
+}
+#row1 {
+  grid-column: 1/7;
+  grid-row: 1;
+}
+#row2 {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+#row3 {
+  grid-column: 1/4;
+  grid-row: 3;
+  position: relative;
+}
+.small {
+  display: block;
+  font-size: .75rem;
+}
+#row4 {
+  grid-column: 4/7;
+  grid-row: 2;
+}
+#row5 {
+  grid-column: 4/7;
+  grid-row: 3;
+  position: relative;
+}
+#row6 {
+  padding-top: 25px;
+  grid-column: 1/7;
+  grid-row: 4;
+}
+#row7 {
+  grid-column: 1/7;
+  grid-row: 5;
+}
+#row8 {
+  padding-top: 25px;
+  grid-column: 1/7;
+  grid-row: 6;
+}
+#row9 {
+  grid-column: 1/7;
+  grid-row: 7;
+}
+#row10 {
+  padding-top: 25px;
+  grid-column: 1/7;
+  grid-row: 8;
+}
+#row11 {
+  grid-column: 1/7;
+  grid-row: 9;
+}
+#row12 {
+  grid-column: 1/7;
+  grid-row: 10;
+}
+.button {
+  width: 125px;
+  height: 41px;
+  background: #7c5838;
+  color: #fff;
+  border: none;
+  letter-spacing: .2rem;
+  text-align: center;
+  font-size: .7rem;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+@media screen and (min-width:640px){
+  #container {
+    display: flex;
+  }
+  #left {
+    width: 48%;
+    margin-right: 4%;
+  }
+  #right {
+    padding-top: 75px;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1200px){
+  #container {
+    width: 1200px;
+  }
+}

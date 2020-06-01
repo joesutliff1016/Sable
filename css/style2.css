@@ -1,0 +1,535 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+main {
+    flex-grow: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+header, main, footer {
+    flex-shrink: 0;
+}
+#desktop {
+  display: none;
+}
+#dropdwn-container {
+  width: 95%;
+  margin: 15px auto;
+}
+.dropbtn {
+  display: block;
+  width: 100%;
+  background-color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.dropbtn::before {
+  content: "FILTER";
+  display: block;
+  width: 50%;
+  float: left;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: .9rem;
+  letter-spacing: 2.5px;
+  padding-top: 8px;
+}
+.dropbtn::after {
+  content: "+";
+  display: block;
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.dropbtn1 {
+  display: block;
+  width: 100%;
+  background-color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.dropbtn1::before {
+  content: "FILTER: HANDSOAPS";
+  display: block;
+  width: 75%;
+  float: left;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: .9rem;
+  letter-spacing: 2.5px;
+  padding-top: 8px;
+}
+.dropbtn1::after {
+  content: "+ ";
+  display: block;
+  width: 25%;
+  float: right;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+
+.dropbtn2 {
+  display: block;
+  width: 100%;
+  background-color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.dropbtn2::before {
+  content: "FILTER: BATHSOAPS";
+  display: block;
+  width: 75%;
+  float: left;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: .9rem;
+  letter-spacing: 2.5px;
+  padding-top: 8px;
+}
+.dropbtn2::after {
+  content: "+ ";
+  display: block;
+  width: 25%;
+  float: right;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.dropbtn3 {
+  display: block;
+  width: 100%;
+  background-color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.dropbtn3::before {
+  content: "FILTER: LOTIONS";
+  display: block;
+  width: 75%;
+  float: left;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: .9rem;
+  letter-spacing: 2.5px;
+  padding-top: 8px;
+}
+.dropbtn3::after {
+  content: "+ ";
+  display: block;
+  width: 25%;
+  float: right;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: .9rem;
+  letter-spacing: 2.5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f4f4f4;
+  width: 100%;
+  z-index: 1;
+  text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #7c5838;}
+
+#myDropdown {
+  display: none;
+}
+.add {
+  color: #7c5838;
+}
+.normal{
+  color: #000;
+}
+.urhere {
+  color: #7c5838;
+}
+.nothere{
+  color: #000;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#product-name {
+  margin-top: 15px;
+}
+.products-container {
+  width: 95%;
+  margin: 25px auto 50px auto;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-info {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .78rem;
+  font-weight: lighter;
+  letter-spacing: .1em;
+  line-height: 1.5rem;
+
+}
+.products img {
+  display: block;
+  width: 100%;
+  opacity: .85;
+}
+.products img:hover {
+  opacity: 1;
+}
+#back-to-shopping a{
+  display: block;
+  font-size: .75rem;
+  letter-spacing: .1em;
+  line-height: 1.5rem;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+#back-to-shopping a:hover {
+  cursor: pointer;
+}
+
+.individual-products-container {
+  margin: 50px auto;
+  width: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#individual-product-name {
+  text-transform: uppercase;
+}
+.price_desc {
+  font-size: .85rem;
+  font-weight: lighter;
+  letter-spacing: .1em;
+  line-height: 1.5rem;
+}
+.individual-products-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.add-to-cart {
+  padding-left: 0;
+}
+.add-to-cart select {
+  display: none;
+  margin-left: 0;
+  margin-bottom: 0;
+
+}
+#add-button {
+  background: #93683e;
+  width: 205px;
+  height: 50px;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  font-size: .7rem;
+  letter-spacing: .1rem;
+  padding: 10px;
+
+}
+.form_container {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+
+}
+.form_container form {
+  font:100% verdana,arial,sans-serif;
+  width: 95%;
+  margin: 50px auto;
+}
+
+.form_container form br {
+	clear:left;
+}
+.form_container input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form_container input[type=submit] {
+  width: 100%;
+  background-color: #45a049;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: .2rem;
+  font-size: .7rem;
+  font-weight: 900;
+}
+
+.form_container input[type=submit]:hover {
+  opacity: .8;
+}
+.review-container {
+  width: 95%;
+  margin: 50px auto;
+}
+.review {
+  width: 100%;
+}
+.review tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.success {
+  width: 100%;
+  text-align: center;
+	color: green;
+  min-height: 250px;
+}
+.error {
+  width: 100%;
+	color:red;
+  font-size: .8rem;
+}
+.error2 {
+  width: 100%;
+  text-align: center;
+	color:red;
+  min-height: 250px;
+}
+#check-out-form {
+  width: 95%;
+  margin: 50px auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#update {
+  display: flex;
+  justify-content:center;
+}
+#update-button {
+  margin-top: 5px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  background: #222;
+  letter-spacing: .2rem;
+  font-size: .68rem;
+  font-weight: 600;
+}
+#checkout {
+  display: flex;
+  justify-content: center;
+}
+#checkout-button {
+  margin-top: 5px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  background: #45a049;
+  letter-spacing: .2rem;
+  font-size: .68rem;
+  font-weight: 600;
+
+}
+#check-out-form a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #000;
+}
+table {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+	border-collapse:collapse;
+  font-size: .8rem;
+  font-weight: lighter;
+}
+.cart-photo {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
+.yellow {
+  border-top: 3px solid #f2f2f2;
+}
+.align_left {
+	text-align:left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.center {
+	text-align:center;
+}
+.align_right {
+	text-align:right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#product-name {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  width: 90%;
+  margin: 0 auto 15px auto;
+
+}
+@media screen and (min-width: 500px){
+  #update {
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+  #update-button {
+    width: 150px;
+  }
+  #checkout {
+    justify-content: flex-end;
+  }
+  #checkout-button {
+    width: 150px;
+
+  }
+}
+@media screen and (min-width: 600px){
+  .cart-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 650px){
+  #dropdwn-container {
+    display: none;
+  }
+  #desktop {
+    display: unset;
+    display: flex;
+  }
+  #desktop ul {
+    width: 100%;
+    text-align: center;
+  }
+  #desktop ul li {
+    margin: 10px;
+    display: inline;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: .8rem;
+    letter-spacing: 2.5px;
+  }
+  #desktop ul li a {
+    text-decoration: none;
+  }
+
+}
+@media screen and (min-width:670px){
+  .products {
+    width: 33.333%;
+    padding: 10px;
+
+  }
+}
+@media screen and (min-width:700px){
+  .individual-products-container {
+    display: grid;
+    grid-template-columns:repeat(6, 2fr);
+    grid-template-rows:repeat(3, minmax(0px, auto));
+  }
+  .individual-products-container img {
+    width: 90%;
+  }
+  .individual-products-container #row1 {
+    grid-column: 4/7;
+  }
+  .individual-products-container #row2 {
+    grid-column: 1/4;
+    margin-top: -50px;
+  }
+  .individual-products-container #row3{
+    grid-column: 4/7;
+  }
+}
+@media screen and (min-width: 1000px){
+  #check-out-form {
+    width: 1000px;
+  }
+  .form_container {
+    width: 1000px;
+    margin: 25px auto;
+  }
+  .review-container {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .intro-grid {
+    width: 1200px;
+  }
+  .products-container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1280px){
+  .individual-products-container {
+    width: 1200px;
+  }
+
+}

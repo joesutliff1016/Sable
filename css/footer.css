@@ -1,0 +1,112 @@
+
+footer {
+  background: #222;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .8rem;
+  color: #fff;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer-grid {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns:repeat(6, 2fr);
+  grid-template-rows:repeat(4, minmax(0px, auto));
+}
+footer ul {
+  padding: 0;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  font-weight: lighter;
+
+}
+footer nav p {
+  letter-spacing: .1rem;
+  font-weight: bolder;
+}
+footer li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer li a:hover {
+  color: #7c5838;
+}
+.footer-row1 {
+  grid-column: 1/7;
+
+}
+.footer-row2 {
+  grid-column: 1/7;
+
+}
+.footer-row3 {
+  grid-column: 1/7;
+
+}
+.footer-row4 {
+  grid-column: 1/7;
+
+}
+#news {
+  letter-spacing: .1rem;
+  font-weight: bolder;
+}
+footer form {
+  width: 95%;
+}
+footer input {
+  width: 95%;
+  margin-left: 15px;
+  padding: 15px;
+}
+small {
+  letter-spacing: .2rem;
+}
+#signup-button {
+  display: block;
+  width: 120px;
+  height: 41px;
+  margin: 15px auto;
+  background: #7c5838;
+  color: #fff;
+  border: none;
+  letter-spacing: .2rem;
+  text-align: center;
+  font-size: .7rem;
+  font-weight: 900;
+
+}
+#signup-button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+@media screen and (min-width:768px){
+  #footer-grid {
+    display: grid;
+    grid-template-columns:repeat(4, 2fr);
+    grid-template-rows:repeat(4, minmax(0px, auto));
+  }
+  .footer-row1 {
+    grid-column: 1/2;
+  }
+  .footer-row2 {
+    grid-column: 2/3;
+  }
+  .footer-row3 {
+    grid-column: 3/4;
+  }
+  .footer-row4 {
+    grid-column: 4/5;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #footer-grid{
+    width: 1200px;
+
+  }
+}
